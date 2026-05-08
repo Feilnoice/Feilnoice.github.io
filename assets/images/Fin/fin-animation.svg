@@ -1,0 +1,15 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">FIN ANIMATION</title>
+  <desc id="desc">Placeholder artwork for FIN ANIMATION.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#98c2b5"/>
+      <stop offset="1" stop-color="#60857a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="800" cy="360" r="130" fill="#e8edf6" opacity="0.7"/>
+  <rect x="700" y="500" width="200" height="180" rx="18" fill="#e8edf6" opacity="0.7"/>
+  <text x="800" y="790" fill="#f5f8ff" font-family="Space Grotesk, sans-serif" font-size="72" font-weight="700" text-anchor="middle">FIN ANIMATION</text>
+  <text x="800" y="845" fill="#f5f8ff" font-family="Space Grotesk, sans-serif" font-size="34" text-anchor="middle">KEY POSE PASS</text>
+</svg>

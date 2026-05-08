@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phantom of the Opera | Work Detail</title>
+  <meta name="description" content="Phantom of the Opera - 2D illustration work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../work-detail.css">
+</head>
+<body>
+  <div class="detail-shell">
+    <header class="detail-header">
+      <a class="back-link" href="../index.html#portfolio">Back To Works</a>
+      <strong>Shunran Shen</strong>
+    </header>
+
+    <main class="detail-body">
+      <h1 class="detail-title">Phantom of the Opera</h1>
+
+      <div class="tag-row" aria-label="Work tags">
+        <span class="tag">2D</span>
+        <span class="tag">Illustration</span>
+        <span class="tag">Theatre Mood Study</span>
+      </div>
+
+      <p class="lead">
+        This 2D piece explores dramatic lighting and costume texture inspired by stage storytelling from
+        Phantom of the Opera. The composition balances romance and tension through shape rhythm and contrast.
+      </p>
+
+      <img class="main-image" src="../assets/images/PhantomOfTheOpera/phantom-thumb.svg" alt="Phantom of the Opera main artwork">
+
+      <section class="detail-block">
+        <h2>Sketch Pass</h2>
+        <p>
+          Early sketches tested gesture direction and camera angle to keep both characters readable in silhouette.
+          Value grouping was decided before color to preserve theatrical focus.
+        </p>
+      </section>
+
+      <section class="detail-block">
+        <h2>Final 2D Painting</h2>
+        <p>
+          The final painting emphasizes warm spotlight tones against cool shadows, with refined costume folds
+          and mask details to support narrative mood.
+        </p>
+      </section>
+
+      <div class="detail-grid">
+        <img src="../assets/images/PhantomOfTheOpera/phantom-sketch.svg" alt="Phantom of the Opera sketch thumbnails">
+        <img src="../assets/images/PhantomOfTheOpera/phantom-final.svg" alt="Phantom of the Opera final painting close-up">
+      </div>
+    </main>
+
+    <footer class="detail-footer">
+      <p>(c) <span id="year"></span> Shunran Shen</p>
+    </footer>
+  </div>
+
+  <script>
+    const yearNode = document.getElementById("year");
+    if (yearNode) {
+      yearNode.textContent = String(new Date().getFullYear());
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fin | Work Detail</title>
+  <meta name="description" content="Fin - 3D character modeling and animation work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../work-detail.css">
+</head>
+<body>
+  <div class="detail-shell">
+    <header class="detail-header">
+      <a class="back-link" href="../index.html#portfolio">Back To Works</a>
+      <strong>Shunran Shen</strong>
+    </header>
+
+    <main class="detail-body">
+      <h1 class="detail-title">Fin</h1>
+
+      <div class="tag-row" aria-label="Work tags">
+        <span class="tag">3D</span>
+        <span class="tag">Character Modeling</span>
+        <span class="tag">Animation</span>
+      </div>
+
+      <p class="lead">
+        Fin is a stylized 3D character focused on silhouette clarity, clean topology, and expressive animation timing.
+        This page shows the modeling pass and an animation test from the same production track.
+      </p>
+
+      <img class="main-image" src="../assets/images/Fin/fin-thumb.svg" alt="Fin hero render">
+
+      <section class="detail-block">
+        <h2>Character Modeling</h2>
+        <p>
+          Started with body proportion blockout, then refined facial edge loops for deformation and cleaner expression shapes.
+          Final meshes were optimized for animation-friendly rigging.
+        </p>
+      </section>
+
+      <section class="detail-block">
+        <h2>Animation</h2>
+        <p>
+          Motion tests focused on readable pose transitions and weight transfer in fast direction changes.
+          The loop below highlights timing and spacing choices for personality beats.
+        </p>
+      </section>
+
+      <div class="detail-grid">
+        <img src="../assets/images/Fin/fin-modeling.svg" alt="Fin character modeling sheet">
+        <img src="../assets/images/Fin/fin-animation.svg" alt="Fin animation key poses">
+      </div>
+    </main>
+
+    <footer class="detail-footer">
+      <p>(c) <span id="year"></span> Shunran Shen</p>
+    </footer>
+  </div>
+
+  <script>
+    const yearNode = document.getElementById("year");
+    if (yearNode) {
+      yearNode.textContent = String(new Date().getFullYear());
+    }
+  </script>
+</body>
+</html>

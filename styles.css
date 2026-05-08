@@ -1,8 +1,8 @@
 :root {
-  --bg: #121316;
-  --grid-line: rgba(255, 255, 255, 0.05);
-  --paper: #f4f4f3;
-  --paper-shadow: rgba(0, 0, 0, 0.28);
+  --bg: #f4f6f8;
+  --grid-line: rgba(22, 27, 36, 0.05);
+  --paper: #fcfcfd;
+  --paper-shadow: rgba(25, 34, 46, 0.08);
   --ink: #16171b;
   --ink-soft: #353840;
   --muted: #676d7a;
@@ -46,7 +46,7 @@ body {
   gap: 1rem;
   padding: 1.1rem clamp(1rem, 3vw, 1.8rem);
   border-bottom: 2px solid var(--line);
-  background: rgba(255, 255, 255, 0.65);
+  background: #ffffff;
 }
 
 .brand {
@@ -174,34 +174,44 @@ body {
 .portfolio-card {
   border: 2px solid var(--line);
   background: #fff;
-  padding: 0.62rem;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.portfolio-card:hover,
+.portfolio-card:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14);
 }
 
 .portfolio-card[hidden] {
   display: none;
 }
 
-.artwork {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  border: 2px solid #2f3340;
-  background-size: 140% 140%;
+.portfolio-card-link {
+  display: block;
+  padding: 0.62rem;
+  color: inherit;
+  text-decoration: none;
 }
 
-.artwork.tone-a { background-image: linear-gradient(130deg, #8ca6db 0%, #56729f 100%); }
-.artwork.tone-b { background-image: linear-gradient(130deg, #bcc9e8 0%, #7884a0 100%); }
-.artwork.tone-c { background-image: linear-gradient(130deg, #a8c9be 0%, #5f7d72 100%); }
-.artwork.tone-d { background-image: linear-gradient(130deg, #d7c9b0 0%, #8d7758 100%); }
-.artwork.tone-e { background-image: linear-gradient(130deg, #a7b0c9 0%, #5c6681 100%); }
-.artwork.tone-f { background-image: linear-gradient(130deg, #b3b8c6 0%, #686e7c 100%); }
-.artwork.tone-g { background-image: linear-gradient(130deg, #a3c6cd 0%, #587980 100%); }
-.artwork.tone-h { background-image: linear-gradient(130deg, #d6c5df 0%, #7d6a86 100%); }
-.artwork.tone-i { background-image: linear-gradient(130deg, #d6d6d0 0%, #7f7f78 100%); }
+.artwork-photo {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 2px solid #2f3340;
+  object-fit: cover;
+  background: #d7dde8;
+}
 
 .portfolio-card h2 {
   margin: 0.62rem 0 0;
   font-size: 0.95rem;
   font-weight: 500;
+}
+
+.portfolio-card p {
+  margin: 0.35rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
 }
 
 .about-layout,
@@ -329,7 +339,7 @@ textarea {
   text-align: center;
   color: var(--muted);
   font-size: 0.9rem;
-  background: rgba(255, 255, 255, 0.6);
+  background: #f8f9fb;
 }
 
 @media (max-width: 920px) {
