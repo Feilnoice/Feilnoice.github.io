@@ -3,132 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shunran Shen | Character Design Portfolio</title>
-  <meta name="description" content="Concept artist Shunran Shen focuses on character design, visual storytelling, and world-driven costume language.">
+  <title>Shunran Shen | Portfolio</title>
+  <meta name="description" content="Character design portfolio by Shunran Shen.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="index.html">Shunran Shen</a>
-    <nav class="nav-links">
-      <a href="#work">Work</a>
-      <a href="#process">Process</a>
-      <a href="about.html">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#portfolio" aria-label="Shunran Shen home">SHUNRAN</a>
+      <nav class="tab-nav" role="tablist" aria-label="Main Sections">
+        <button class="tab-link is-active" id="tab-portfolio" role="tab" aria-selected="true" aria-controls="panel-portfolio" data-tab-target="portfolio">Portfolio</button>
+        <button class="tab-link" id="tab-about" role="tab" aria-selected="false" aria-controls="panel-about" data-tab-target="about">About</button>
+        <button class="tab-link" id="tab-contact" role="tab" aria-selected="false" aria-controls="panel-contact" data-tab-target="contact">Contact</button>
+      </nav>
+    </header>
 
-  <main id="top">
-    <section class="hero">
-      <p class="eyebrow" data-reveal>Concept Artist / Character Design</p>
-      <h1 data-reveal>Designing characters that feel lived-in, cinematic, and story-ready.</h1>
-      <p class="hero-copy" data-reveal>
-        Shunran builds character concepts through silhouette clarity, costume logic, and emotional narrative.
-        From first thumbnails to polished sheets, each design supports both worldbuilding and performance.
-      </p>
-      <div class="hero-actions" data-reveal>
-        <a class="button primary" href="#work">View Portfolio</a>
-        <a class="button ghost" href="#contact">Commission / Collaborate</a>
-      </div>
-      <div class="hero-panels" data-reveal>
-        <article>
-          <h2>Focus</h2>
-          <p>Character ideation, costume language, and visual development for animation and games.</p>
-        </article>
-        <article>
-          <h2>Strength</h2>
-          <p>Strong shape hierarchy with expressive personalities and production-aware turnarounds.</p>
-        </article>
-      </div>
-    </section>
+    <main class="studio-board">
+      <section class="tab-panel is-active" id="panel-portfolio" role="tabpanel" aria-labelledby="tab-portfolio" data-tab-panel="portfolio">
+        <div class="feature-frame">
+          <p class="scribble">Feature Work</p>
+          <h1>Cinematic Character Key Art</h1>
+          <p>
+            Character concepts, world-driven costumes, and mood-focused paintings.
+            This board can hold your flagship artwork or newest project spotlight.
+          </p>
+        </div>
 
-    <section class="work" id="work">
-      <div class="section-header" data-reveal>
-        <p class="eyebrow">Selected Work</p>
-        <h2>Character-Driven Worlds</h2>
-      </div>
+        <div class="filter-row" aria-label="Portfolio Categories">
+          <button class="filter-chip is-active" data-filter="all">All</button>
+          <button class="filter-chip" data-filter="2d">2D</button>
+          <button class="filter-chip" data-filter="3d">3D</button>
+          <button class="filter-chip" data-filter="illustration">Illustration</button>
+        </div>
 
-      <div class="work-grid">
-        <article class="work-card" data-reveal>
-          <div class="artwork" style="--tone:#6ea8ff;" role="img" aria-label="Placeholder for desert nomad character project"></div>
-          <div class="card-meta">
-            <h3>Windswept Nomad</h3>
-            <p>Silhouette exploration, material breakdown, and expression pass.</p>
+        <div class="portfolio-grid">
+          <article class="portfolio-card" data-category="2d">
+            <div class="artwork tone-a" role="img" aria-label="Desert scout character design sheet"></div>
+            <h2>Desert Scout</h2>
+          </article>
+          <article class="portfolio-card" data-category="illustration">
+            <div class="artwork tone-b" role="img" aria-label="Ritual scene concept painting"></div>
+            <h2>Ritual Gate</h2>
+          </article>
+          <article class="portfolio-card" data-category="3d">
+            <div class="artwork tone-c" role="img" aria-label="Sci-fi pilot 3D turnaround"></div>
+            <h2>Pilot 07 Turnaround</h2>
+          </article>
+          <article class="portfolio-card" data-category="2d">
+            <div class="artwork tone-d" role="img" aria-label="Forest guardian outfit studies"></div>
+            <h2>Forest Guardian</h2>
+          </article>
+          <article class="portfolio-card" data-category="illustration">
+            <div class="artwork tone-e" role="img" aria-label="Fog city key visual"></div>
+            <h2>Fog City Key Visual</h2>
+          </article>
+          <article class="portfolio-card" data-category="3d">
+            <div class="artwork tone-f" role="img" aria-label="Ranger armor 3D concept blockout"></div>
+            <h2>Ranger Armor Blockout</h2>
+          </article>
+          <article class="portfolio-card" data-category="2d">
+            <div class="artwork tone-g" role="img" aria-label="Expression sheet for heroine"></div>
+            <h2>Heroine Expression Pass</h2>
+          </article>
+          <article class="portfolio-card" data-category="illustration">
+            <div class="artwork tone-h" role="img" aria-label="Moonlit duel storyboard panel"></div>
+            <h2>Moonlit Duel</h2>
+          </article>
+          <article class="portfolio-card" data-category="3d">
+            <div class="artwork tone-i" role="img" aria-label="Mechanic character material pass"></div>
+            <h2>Mechanic Material Pass</h2>
+          </article>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="panel-about" role="tabpanel" aria-labelledby="tab-about" data-tab-panel="about" hidden>
+        <div class="about-layout">
+          <div class="profile-card">
+            <div class="avatar" aria-hidden="true"></div>
+            <h1>Shunran Shen</h1>
+            <p>Concept Artist / Character Designer</p>
           </div>
-        </article>
 
-        <article class="work-card" data-reveal>
-          <div class="artwork" style="--tone:#86d6ff;" role="img" aria-label="Placeholder for sci-fi pilot character project"></div>
-          <div class="card-meta">
-            <h3>Orbital Pilot 07</h3>
-            <p>Functional suit design with modular armor options and color keys.</p>
+          <div class="about-copy">
+            <h2>Design Direction</h2>
+            <p>
+              I design characters that read clearly in silhouette, carry emotional storytelling, and stay practical for production.
+              My workflow starts from role and personality, then moves into shape language, costume logic, and final presentation.
+            </p>
+
+            <h2>Workflow</h2>
+            <ol>
+              <li>Story role and mood setup.</li>
+              <li>Thumbnail and silhouette exploration.</li>
+              <li>Costume and material iteration.</li>
+              <li>Final sheet delivery with callouts.</li>
+            </ol>
+
+            <h2>Find Me</h2>
+            <div class="social-links" aria-label="Artist Social Links">
+              <a href="https://www.artstation.com/" target="_blank" rel="noopener noreferrer">ArtStation</a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
           </div>
-        </article>
+        </div>
+      </section>
 
-        <article class="work-card" data-reveal>
-          <div class="artwork" style="--tone:#b3c7ff;" role="img" aria-label="Placeholder for fantasy guardian character project"></div>
-          <div class="card-meta">
-            <h3>Sanctuary Guardian</h3>
-            <p>Mythic costume motifs, prop callouts, and turnaround preparation.</p>
+      <section class="tab-panel" id="panel-contact" role="tabpanel" aria-labelledby="tab-contact" data-tab-panel="contact" hidden>
+        <div class="contact-layout">
+          <div class="contact-info">
+            <h1>Let's Connect</h1>
+            <p><strong>Phone:</strong> +1 (555) 672-1902</p>
+            <p><strong>Email:</strong> shunran@example.com</p>
+            <p><strong>Message:</strong> Share project type, timeline, and style direction.</p>
           </div>
-        </article>
-      </div>
-    </section>
 
-    <section class="process" id="process">
-      <div class="section-header" data-reveal>
-        <p class="eyebrow">Workflow</p>
-        <h2>From Spark to Final Sheet</h2>
-      </div>
-      <ol class="steps">
-        <li data-reveal>
-          <h3>01 - Discovery</h3>
-          <p>Mood boards, story hooks, and shape families to set a clear design intent.</p>
-        </li>
-        <li data-reveal>
-          <h3>02 - Iteration</h3>
-          <p>Thumbnail batches focused on proportion rhythm and recognizable silhouettes.</p>
-        </li>
-        <li data-reveal>
-          <h3>03 - Refinement</h3>
-          <p>Costume logic, materials, and color hierarchy tuned for role and readability.</p>
-        </li>
-        <li data-reveal>
-          <h3>04 - Delivery</h3>
-          <p>Final line + paint package with callouts, expressions, and clean turnarounds.</p>
-        </li>
-      </ol>
-    </section>
+          <form class="contact-form" action="#" method="post">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name">
 
-    <section class="about-preview">
-      <div class="section-header" data-reveal>
-        <p class="eyebrow">Artist Profile</p>
-        <h2>Read the Full About Page</h2>
-      </div>
-      <p class="about-copy" data-reveal>
-        Learn more about Shunran's design philosophy, production workflow, and collaboration style.
-      </p>
-      <a class="button ghost" data-reveal href="about.html">Go to About</a>
-    </section>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com">
 
-    <section class="contact" id="contact">
-      <div class="section-header" data-reveal>
-        <p class="eyebrow">Let's Build Something</p>
-        <h2>Open for Freelance & Studio Projects</h2>
-      </div>
-      <p data-reveal>
-        For commissions, recruiting, or collaboration, reach out via email and include your project timeline and scope.
-      </p>
-      <a class="button primary" data-reveal href="mailto:shunran@example.com">shunran@example.com</a>
-    </section>
-  </main>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project"></textarea>
 
-  <footer class="site-footer">
-    <p>(c) <span id="year"></span> Shunran Shen. Character Design Portfolio.</p>
-  </footer>
+            <button type="submit">Send Inquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>(c) <span id="year"></span> Shunran Shen</p>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
