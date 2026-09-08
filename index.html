@@ -3,141 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shunran Shen | Portfolio</title>
-  <meta name="description" content="Character design portfolio by Shunran Shen.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Shunran Shen | Character Concept Artist</title>
+  <meta name="description" content="Character concept art, illustration, and 3D work by Shunran Shen.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-shell">
+  <div class="site-shell">
     <header class="site-header">
-      <a class="brand" href="#portfolio" aria-label="Shunran Shen home">SHUNRAN</a>
-      <nav class="tab-nav" role="tablist" aria-label="Main Sections">
-        <button class="tab-link is-active" id="tab-portfolio" role="tab" aria-selected="true" aria-controls="panel-portfolio" data-tab-target="portfolio">Portfolio</button>
-        <button class="tab-link" id="tab-about" role="tab" aria-selected="false" aria-controls="panel-about" data-tab-target="about">About</button>
-        <button class="tab-link" id="tab-contact" role="tab" aria-selected="false" aria-controls="panel-contact" data-tab-target="contact">Contact</button>
+      <a class="brand" href="index.html">Shunran Shen</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="is-active" href="index.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#resume">Resume</a>
       </nav>
     </header>
 
-    <main class="studio-board">
-      <section class="tab-panel is-active" id="panel-portfolio" role="tabpanel" aria-labelledby="tab-portfolio" data-tab-panel="portfolio">
-        <div class="feature-frame">
-          <p class="scribble">Feature Work</p>
-          <h1>Cinematic Character Key Art</h1>
-          <p>
-            Character concepts, world-driven costumes, and mood-focused paintings.
-            This board can hold your flagship artwork or newest project spotlight.
-          </p>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-art" role="img" aria-label="Featured character concept artwork"></div>
+        <div class="hero-copy">
+          <h1 id="hero-title">SHUNRAN<br>SHEN</h1>
+          <p>CHARACTER CONCEPT DESIGNER<br>ILLUSTRATOR · CHARACTER MODELER</p>
         </div>
+      </section>
 
-        <div class="filter-row" aria-label="Portfolio Categories">
-          <button class="filter-chip is-active" data-filter="all">All</button>
-          <button class="filter-chip" data-filter="2d-concept">2D Concept</button>
-          <button class="filter-chip" data-filter="3d">3D</button>
-          <button class="filter-chip" data-filter="illustration">Illustration</button>
+      <section class="portfolio" id="portfolio" aria-label="Portfolio projects">
+        <div class="filter-row" aria-label="Portfolio categories">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="character-design">Character Design</button>
+          <button class="filter-button" type="button" data-filter="illustration">Illustration</button>
+          <button class="filter-button" type="button" data-filter="3d">3D</button>
         </div>
 
         <div class="portfolio-grid">
-          <article class="portfolio-card" data-category="3d">
-            <a class="portfolio-card-link" href="works/fin.html">
-              <img class="artwork-photo" src="assets/images/Fin/fin-thumb.svg" alt="Fin 3D character modeling and animation preview">
-              <h2>Fin</h2>
-              <p>3D Character Modeling / Animation</p>
+          <article class="project-card" data-category="character-design">
+            <a href="works/memory.html">
+              <img src="assets/images/Memory/memory-thumb.svg" alt="Memory character design project">
+              <div class="project-meta">
+                <h2>Memory — Ahnel</h2>
+                <p>Character Design</p>
+              </div>
             </a>
           </article>
-          <article class="portfolio-card" data-category="2d-concept">
-            <a class="portfolio-card-link" href="works/memory.html">
-              <img class="artwork-photo" src="assets/images/Memory/memory-thumb.svg" alt="Memory 2D concept artwork preview">
-              <h2>Memory</h2>
-              <p>2D Concept</p>
+
+          <article class="project-card" data-category="character-design">
+            <a href="works/kula.html">
+              <img src="assets/images/Kula/kula-thumb.svg" alt="Kula character design project">
+              <div class="project-meta">
+                <h2>Kula</h2>
+                <p>Character Design</p>
+              </div>
             </a>
           </article>
-          <article class="portfolio-card" data-category="2d-concept">
-            <a class="portfolio-card-link" href="works/kula.html">
-              <img class="artwork-photo" src="assets/images/Kula/kula-thumb.svg" alt="Kula 2D concept artwork preview">
-              <h2>Kula</h2>
-              <p>2D Concept</p>
+
+          <article class="project-card" data-category="illustration">
+            <a href="works/phantom-of-the-opera.html">
+              <img src="assets/images/PhantomOfTheOpera/phantom-thumb.svg" alt="Phantom of the Opera illustration project">
+              <div class="project-meta">
+                <h2>Phantom of the Opera</h2>
+                <p>Illustration</p>
+              </div>
             </a>
           </article>
-          <article class="portfolio-card" data-category="2d-concept">
-            <a class="portfolio-card-link" href="works/the-destined-mission.html">
-              <img class="artwork-photo" src="assets/images/TheDestinedMission/destined-mission-thumb.svg" alt="The Destined Mission 2D concept artwork preview">
-              <h2>The Destined Mission</h2>
-              <p>2D Concept</p>
+
+          <article class="project-card" data-category="3d">
+            <a href="works/fin.html">
+              <img src="assets/images/Fin/fin-thumb.svg" alt="Fin 3D character project">
+              <div class="project-meta">
+                <h2>Fin</h2>
+                <p>3D Character</p>
+              </div>
             </a>
           </article>
-          <article class="portfolio-card" data-category="illustration">
-            <a class="portfolio-card-link" href="works/phantom-of-the-opera.html">
-              <img class="artwork-photo" src="assets/images/PhantomOfTheOpera/phantom-thumb.svg" alt="Phantom of the Opera illustration preview">
-              <h2>Phantom of the Opera</h2>
-              <p>Illustration</p>
+
+          <article class="project-card" data-category="character-design">
+            <a href="works/the-destined-mission.html">
+              <img src="assets/images/TheDestinedMission/destined-mission-thumb.svg" alt="The Destined Mission character design project">
+              <div class="project-meta">
+                <h2>The Destined Mission</h2>
+                <p>Character Design</p>
+              </div>
             </a>
           </article>
-        </div>
-      </section>
-
-      <section class="tab-panel" id="panel-about" role="tabpanel" aria-labelledby="tab-about" data-tab-panel="about" hidden>
-        <div class="about-layout">
-          <div class="profile-card">
-            <div class="avatar" aria-hidden="true"></div>
-            <h1>Shunran Shen</h1>
-            <p>Concept Artist / Character Designer</p>
-          </div>
-
-          <div class="about-copy">
-            <h2>Design Direction</h2>
-            <p>
-              I design characters that read clearly in silhouette, carry emotional storytelling, and stay practical for production.
-              My workflow starts from role and personality, then moves into shape language, costume logic, and final presentation.
-            </p>
-
-            <h2>Workflow</h2>
-            <ol>
-              <li>Story role and mood setup.</li>
-              <li>Thumbnail and silhouette exploration.</li>
-              <li>Costume and material iteration.</li>
-              <li>Final sheet delivery with callouts.</li>
-            </ol>
-
-            <h2>Find Me</h2>
-            <div class="social-links" aria-label="Artist Social Links">
-              <a href="https://www.artstation.com/" target="_blank" rel="noopener noreferrer">ArtStation</a>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="tab-panel" id="panel-contact" role="tabpanel" aria-labelledby="tab-contact" data-tab-panel="contact" hidden>
-        <div class="contact-layout">
-          <div class="contact-info">
-            <h1>Let's Connect</h1>
-            <p><strong>Phone:</strong> +1 (555) 672-1902</p>
-            <p><strong>Email:</strong> shunran@example.com</p>
-            <p><strong>Message:</strong> Share project type, timeline, and style direction.</p>
-          </div>
-
-          <form class="contact-form" action="#" method="post">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Your name">
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com">
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project"></textarea>
-
-            <button type="submit">Send Inquiry</button>
-          </form>
         </div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <p>(c) <span id="year"></span> Shunran Shen</p>
-    </footer>
   </div>
 
   <script src="script.js"></script>
