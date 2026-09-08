@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shunran Shen | Portfolio Preview</title>
+  <meta name="description" content="Preview of Shunran Shen's portfolio redesign.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">Shunran Shen</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="is-active" href="index.html">Portfolio</a>
+        <a href="../about.html">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#resume">Resume</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-art" role="img" aria-label="Featured character concept artwork"></div>
+        <div class="hero-copy">
+          <h1 id="hero-title">SHUNRAN<br>SHEN</h1>
+          <p>CHARACTER CONCEPT DESIGNER<br>ILLUSTRATOR · CHARACTER MODELER</p>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio" aria-label="Portfolio projects">
+        <div class="filter-row" aria-label="Portfolio categories">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="character-design">Character Design</button>
+          <button class="filter-button" type="button" data-filter="illustration">Illustration</button>
+          <button class="filter-button" type="button" data-filter="3d">3D</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="project-card" data-category="character-design">
+            <a href="../works/memory.html">
+              <img src="../assets/images/Memory/memory-thumb.svg" alt="Memory character design project">
+              <div class="project-meta"><h2>Memory — Ahnel</h2><p>Character Design</p></div>
+            </a>
+          </article>
+
+          <article class="project-card" data-category="character-design">
+            <a href="../works/kula.html">
+              <img src="../assets/images/Kula/kula-thumb.svg" alt="Kula character design project">
+              <div class="project-meta"><h2>Kula</h2><p>Character Design</p></div>
+            </a>
+          </article>
+
+          <article class="project-card" data-category="illustration">
+            <a href="../works/phantom-of-the-opera.html">
+              <img src="../assets/images/PhantomOfTheOpera/phantom-thumb.svg" alt="Phantom of the Opera illustration project">
+              <div class="project-meta"><h2>Phantom of the Opera</h2><p>Illustration</p></div>
+            </a>
+          </article>
+
+          <article class="project-card" data-category="3d">
+            <a href="../works/fin.html">
+              <img src="../assets/images/Fin/fin-thumb.svg" alt="Fin 3D character project">
+              <div class="project-meta"><h2>Fin</h2><p>3D Character</p></div>
+            </a>
+          </article>
+
+          <article class="project-card" data-category="character-design">
+            <a href="../works/the-destined-mission.html">
+              <img src="../assets/images/TheDestinedMission/destined-mission-thumb.svg" alt="The Destined Mission character design project">
+              <div class="project-meta"><h2>The Destined Mission</h2><p>Character Design</p></div>
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
