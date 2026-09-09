@@ -142,3 +142,6 @@ main { padding: 18px 22px 28px; }
   box-shadow: 0 8px 20px rgba(0,0,0,.25);
 }
 .main-nav .portfolio-options a { display: block; padding: 12px; font-size: 14px; }
+
+/* Keep category tabs visible below the sticky navigation after a jump. */
+.portfolio { scroll-margin-top: 120px; }
