@@ -9,6 +9,15 @@ function applyFilter(filter) {
     button.setAttribute('aria-pressed', String(active));
   });
 
+
+  projectCards.forEach((card) => {
+    card.querySelectorAll('a[href]').forEach((link) => {
+      const destination = new URL(link.getAttribute('href'), window.location.href);
+      destination.searchParams.set('from', filter);
+      link.href = destination.href;
+    });
+  });
+
   projectCards.forEach((card) => {
     card.hidden = filter !== 'all' && card.dataset.category !== filter;
   });
