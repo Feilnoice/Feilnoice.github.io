@@ -24,7 +24,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 main { padding: 18px 22px 28px; }
 
 .hero { position: relative; min-height: 360px; overflow: hidden; background: #111; border: 1px solid #2a272b; }
-.hero-art { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,0.06) 0 58%, rgba(0,0,0,0.56) 76%, rgba(0,0,0,0.75) 100%), url("../assets/images/Memory/memory-final.svg") left center / 62% auto no-repeat, #121212; }
+.hero-art { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,0.06) 0 58%, rgba(0,0,0,0.56) 76%, rgba(0,0,0,0.75) 100%), url("assets/images/Hero.png") left center / 62% auto no-repeat, #121212; }
 .hero-copy { position: relative; z-index: 1; min-height: 360px; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between; padding: 58px 48px 32px; text-align: right; }
 .hero-copy h1 { margin: 0; font-size: clamp(28px, 3.2vw, 54px); line-height: 0.95; font-weight: 400; letter-spacing: 0.34em; }
 .hero-copy p { margin: 0; font-size: 11px; line-height: 1.2; color: #c8c3c6; }
@@ -60,11 +60,53 @@ main { padding: 18px 22px 28px; }
   .site-shell { width: 100%; margin: 0; min-height: 100vh; }
   .main-nav { width: 100%; gap: 8px; }
   .hero, .hero-copy { min-height: 420px; }
-  .hero-art { background: linear-gradient(0deg, rgba(0,0,0,0.76) 0 26%, rgba(0,0,0,0.08) 56%), url("../assets/images/Memory/memory-final.svg") center 30% / cover no-repeat, #111; }
+  .hero-art { background: linear-gradient(0deg, rgba(0,0,0,0.76) 0 26%, rgba(0,0,0,0.08) 56%), url("assets/images/Hero.png") center 30% / cover no-repeat, #111; }
   .hero-copy { justify-content: flex-end; align-items: flex-start; text-align: left; gap: 18px; padding: 24px; }
   .hero-copy h1 { font-size: 30px; }
   .filter-row { overflow-x: auto; scrollbar-width: none; }
   .filter-row::-webkit-scrollbar { display: none; }
   .filter-button { white-space: nowrap; }
   .portfolio-grid { grid-template-columns: 1fr; padding-inline: 0; border-left: 0; border-right: 0; }
+}
+
+/* Uploaded full-width artwork; keep its original composition. */
+.hero { min-height: 0; aspect-ratio: 1657 / 470; }
+.hero-art { background: #121212 url("assets/images/Hero.png") center / cover no-repeat; }
+.hero-copy { min-height: 0; height: 100%; padding: clamp(22px, 4vw, 58px) clamp(20px, 3.3vw, 48px) clamp(18px, 2.2vw, 32px); }
+.hero-copy h1 { font-size: clamp(24px, 2.6vw, 42px); }
+.hero-copy p { font-size: clamp(11px, 1vw, 14px); }
+
+.about-page { padding: clamp(32px, 5vw, 76px) clamp(24px, 6vw, 90px) clamp(40px, 6vw, 90px); }
+.about-layout { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr); gap: 28px clamp(32px, 4.5vw, 68px); max-width: 1100px; margin: 0 auto; align-items: start; }
+.about-portrait { margin: 0; }
+.about-portrait img { display: block; width: 100%; height: auto; background: var(--panel); }
+.about-copy { min-width: 0; padding-top: 8px; }
+.about-copy h1 { margin: 0 0 18px; font-size: clamp(26px, 2.6vw, 40px); line-height: 1.25; letter-spacing: 0.28em; font-weight: 400; }
+.about-role { margin: 0 0 30px; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.about-bio p { margin: 0 0 20px; font-size: 16px; line-height: 1.8; }
+.about-location { margin: 32px 0 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.about-contact { grid-column: 1 / -1; padding-top: 28px; border-top: 1px solid var(--line); }
+.about-contact h2 { margin: 0 0 20px; font-size: 14px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+.contact-links { display: flex; flex-wrap: wrap; gap: 18px 42px; }
+.contact-links a { font-size: 16px; text-decoration: none; padding: 8px 0; overflow-wrap: anywhere; border-bottom: 1px solid var(--line); }
+.contact-links a:hover { border-color: var(--text); }
+.contact-links a:focus-visible { outline: 2px solid var(--text); outline-offset: 5px; }
+.contact-pending { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.7; }
+@media (max-width: 900px) {
+  .hero { min-height: 250px; }
+  .hero-copy { min-height: 250px; }
+}
+@media (max-width: 700px) {
+  .about-layout { grid-template-columns: 1fr; gap: 32px; }
+  .about-portrait { width: min(100%, 380px); }
+  .about-copy { padding-top: 0; }
+  .about-copy h1 { font-size: 30px; }
+  .about-contact { grid-column: auto; padding-top: 24px; }
+}
+@media (max-width: 620px) {
+  .hero { aspect-ratio: auto; min-height: 0; }
+  .hero-art { position: relative; height: auto; aspect-ratio: 1657 / 470; background: #121212 url("assets/images/Hero.png") center / contain no-repeat; }
+  .hero-copy { min-height: 0; height: auto; padding: 24px; gap: 18px; background: #121212; }
+  .hero-copy h1 { font-size: 28px; }
+  .hero-copy p { font-size: 12px; line-height: 1.5; }
 }
