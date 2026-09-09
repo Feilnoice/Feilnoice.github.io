@@ -16,7 +16,12 @@ a { color: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
 
 .site-shell { width: min(calc(100% - 80px), var(--max-width)); margin: 56px auto; background: var(--bg); min-height: calc(100vh - 112px); }
-.site-header { height: 62px; display: flex; align-items: center; justify-content: space-between; padding: 0 22px; border-bottom: 1px solid var(--line); }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+ height: 62px; display: flex; align-items: center; justify-content: space-between; padding: 0 22px; border-bottom: 1px solid var(--line); }
 .brand { text-decoration: none; font-size: 13px; color: #d7d2d5; }
 .main-nav { display: flex; align-items: center; gap: 34px; }
 .main-nav a { text-decoration: none; color: var(--muted); font-size: 12px; padding: 5px 8px; }
