@@ -3,13 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting to About</title>
-  <meta http-equiv="refresh" content="0; url=index.html#about">
-  <script>
-    window.location.replace("index.html#about");
-  </script>
+  <title>About | Shunran Shen</title>
+  <meta name="description" content="Shunran Shen is a character concept artist and illustrator studying Game Art at USC, based in Los Angeles and open to opportunities worldwide.">
+  <link rel="stylesheet" href="styles.css?v=hero-about-1">
 </head>
 <body>
-  <p>Redirecting to <a href="index.html#about">About</a>...</p>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">Shunran Shen</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Portfolio</a>
+        <a class="is-active" href="about.html" aria-current="page">About</a>
+        <a href="index.html#resume">Resume</a>
+      </nav>
+    </header>
+    <main class="about-page">
+      <div class="about-layout">
+        <figure class="about-portrait">
+          <img src="assets/images/AboutPic.jpg" alt="Portrait of Shunran Shen" width="1086" height="1448" fetchpriority="high">
+        </figure>
+        <section class="about-copy" aria-labelledby="about-name">
+          <h1 id="about-name">SHUNRAN<br>SHEN</h1>
+          <p class="about-role">Character Concept Artist / Illustrator</p>
+          <div class="about-bio">
+            <p>Hi, I’m Shunran Shen, a character concept artist and illustrator studying Game Art at USC. I focus on character design, with 3D as part of my design process.</p>
+            <p>I’m especially interested in developing a personal visual language and creating character designs that feel distinctive and memorable.</p>
+            <p>I’m currently based in Los Angeles and open to character concept opportunities worldwide.</p>
+          </div>
+          <p class="about-location">USC Game Art &nbsp;·&nbsp; Los Angeles</p>
+        </section>
+        <section class="about-contact" id="contact" aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Contact</h2>
+          <!-- Contact links will be added once the artist supplies their public addresses. -->
+          <p class="contact-pending">Contact details coming soon.</p>
+        </section>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
