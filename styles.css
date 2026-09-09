@@ -367,3 +367,30 @@ main {
   .hero-copy h1 { font-size: 28px; }
   .hero-copy p { font-size: 12px; line-height: 1.5; }
 }
+
+/* Portfolio category disclosure in the shared header. */
+.portfolio-menu { position: relative; }
+.portfolio-menu summary {
+  display: flex; align-items: center; gap: 7px;
+  padding: 5px 8px; color: var(--muted); font-size: 12px;
+  cursor: pointer; list-style: none;
+}
+.portfolio-menu summary::-webkit-details-marker { display: none; }
+.portfolio-menu summary::after {
+  content: ""; width: 5px; height: 5px;
+  border-right: 1px solid currentColor; border-bottom: 1px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+}
+.portfolio-menu[open] summary::after { transform: translateY(1px) rotate(225deg); }
+.portfolio-menu summary:hover, .portfolio-menu summary:focus-visible,
+.portfolio-menu[open] summary, .portfolio-menu.is-active summary {
+  color: var(--text); background: #353136;
+}
+.portfolio-menu summary:focus-visible { outline: 1px solid var(--text); outline-offset: 2px; }
+.portfolio-options {
+  position: absolute; top: calc(100% + 8px); left: 0; z-index: 101;
+  width: 190px; max-width: calc(100vw - 40px); padding: 6px;
+  background: var(--bg); border: 1px solid var(--line);
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+.main-nav .portfolio-options a { display: block; padding: 12px; font-size: 14px; }

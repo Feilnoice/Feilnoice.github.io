@@ -2,6 +2,7 @@ const filterButtons = document.querySelectorAll('.filter-button');
 const projectCards = document.querySelectorAll('.project-card');
 
 function applyFilter(filter) {
+  if (!['all', 'character-design', 'illustration', '3d'].includes(filter)) filter = 'all';
   filterButtons.forEach((button) => {
     const active = button.dataset.filter === filter;
     button.classList.toggle('is-active', active);
@@ -19,4 +20,4 @@ filterButtons.forEach((button) => {
   });
 });
 
-applyFilter('all');
+applyFilter(new URLSearchParams(window.location.search).get('category') || 'all');
