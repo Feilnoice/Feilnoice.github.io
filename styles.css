@@ -14,14 +14,14 @@
 }
 
 html {
-  background: #f3f3f3;
+  background: var(--bg);
 }
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
-  background: #f3f3f3;
+  background: var(--bg);
 }
 
 a {
@@ -35,9 +35,9 @@ a {
 
 .site-shell {
   width: min(calc(100% - 80px), var(--max-width));
-  margin: 56px auto;
+  margin: 0 auto;
   background: var(--bg);
-  min-height: calc(100vh - 112px);
+  min-height: 100vh;
 }
 
 .site-header {
@@ -167,8 +167,8 @@ main {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px 20px;
-  padding: 20px 14px 0;
+  gap: 40px clamp(28px, 3.5vw, 52px);
+  padding: 30px clamp(24px, 3vw, 44px) 24px;
   border-left: 1px solid #817a83;
   border-right: 1px solid #817a83;
 }
@@ -230,7 +230,7 @@ main {
 @media (max-width: 900px) {
   .site-shell {
     width: calc(100% - 28px);
-    margin: 14px auto;
+    margin: 0 auto;
   }
 
   .site-header {
@@ -397,3 +397,11 @@ main {
 
 /* Keep category tabs visible below the sticky navigation after a jump. */
 .portfolio { scroll-margin-top: 120px; }
+
+/* Keep the more spacious square-cover layout comfortable on smaller screens. */
+@media (max-width: 900px) {
+  .portfolio-grid { gap: 30px 28px; padding: 26px 24px 24px; }
+}
+@media (max-width: 620px) {
+  .portfolio-grid { gap: 28px; padding: 24px 16px; }
+}
