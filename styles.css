@@ -406,3 +406,9 @@ main {
 @media (max-width: 620px) {
   .portfolio-grid { gap: 28px; padding: 24px 16px; }
 }
+
+/* Contact icons follow the existing monochrome palette. */
+.contact-links a { display: inline-flex; align-items: center; gap: 10px; max-width: 100%; }
+.contact-links a span { min-width: 0; }
+.contact-icon { width: 18px; height: 18px; flex: 0 0 18px; color: var(--muted); }
+.contact-links a:hover .contact-icon, .contact-links a:focus-visible .contact-icon { color: var(--text); }
