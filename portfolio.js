@@ -3,8 +3,22 @@ const projects = [...document.querySelectorAll('.portfolio-project')];
 const links = [...document.querySelectorAll('.project-index a')];
 let visible = projects;
 let scheduled = false;
+const filterRow = document.querySelector('.filter-row');
+const header = document.querySelector('.site-header');
+const mainNav = header.querySelector('.main-nav');
+const mergedNav = document.createElement('div');
+mergedNav.className = 'merged-navigation';
+filterRow.append(mergedNav);
+function syncNavigation() {
+  const merged = filterRow.getBoundingClientRect().top <= 0;
+  if (merged && mainNav.parentElement !== mergedNav) mergedNav.append(mainNav);
+  if (!merged && mainNav.parentElement !== header) header.append(mainNav);
+  filterRow.classList.toggle('is-merged', merged);
+  document.documentElement.style.setProperty('--reader-top', `${filterRow.offsetHeight + 8}px`);
+}
 function markCurrent() {
   scheduled = false;
+  syncNavigation();
   if (!visible.length) return;
   const threshold = document.querySelector('.filter-row').getBoundingClientRect().bottom + 24;
   let current = visible[0];
@@ -51,6 +65,7 @@ window.addEventListener('scroll', () => {
 window.addEventListener('resize', markCurrent);
 window.addEventListener('popstate', () => applyFilter(new URLSearchParams(location.search).get('category') || 'all'));
 document.querySelector('.project-stream').addEventListener('load', markCurrent, true);
+new ResizeObserver(syncNavigation).observe(filterRow);
 applyFilter(new URLSearchParams(location.search).get('category') || 'all');
 const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
 if (target && target.classList.contains('portfolio-project') && target.hidden) applyFilter(target.dataset.category);
