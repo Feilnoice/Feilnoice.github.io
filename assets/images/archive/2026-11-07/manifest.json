@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-07",
+  "sourceBranch": "portfolio-redesign",
+  "sourceCommit": "b6b2bcb4741bba8059106b221615437c9ac83107",
+  "projects": {
+    "memory": [
+      {
+        "uploadedName": "roa_1.png",
+        "original": "assets/images/archive/memory/2026-11-07/originals/roa_1.png",
+        "web": "assets/images/web/memory/2026-11-07/roa-1.webp",
+        "width": 2800,
+        "height": 1826,
+        "bytes": 223128
+      },
+      {
+        "uploadedName": "roa_2.png",
+        "original": "assets/images/archive/memory/2026-11-07/originals/roa_2.png",
+        "web": "assets/images/web/memory/2026-11-07/roa-2.webp",
+        "width": 2800,
+        "height": 1826,
+        "bytes": 149050
+      },
+      {
+        "uploadedName": "roa_3.png",
+        "original": "assets/images/archive/memory/2026-11-07/originals/roa_3.png",
+        "web": "assets/images/web/memory/2026-11-07/roa-3.webp",
+        "width": 2800,
+        "height": 1826,
+        "bytes": 215224
+      },
+      {
+        "uploadedName": "roa_4.png",
+        "original": "assets/images/archive/memory/2026-11-07/originals/roa_4.png",
+        "web": "assets/images/web/memory/2026-11-07/roa-4.webp",
+        "width": 2800,
+        "height": 1826,
+        "bytes": 252218
+      },
+      {
+        "uploadedName": "ahnel_1.png",
+        "original": "assets/images/archive/memory/2026-11-07/originals/ahnel_1.png",
+        "web": "assets/images/web/memory/2026-11-07/ahnel-1.webp",
+        "width": 2800,
+        "height": 1826,
+        "bytes": 188734
+      },
+      {
+        "uploadedName": "ahnel_2.png",
+        "original": "assets/images/archive/memory/2026-11-07/originals/ahnel_2.png",
+        "web": "assets/images/web/memory/2026-11-07/ahnel-2.webp",
+        "width": 2800,
+        "height": 1558,
+        "bytes": 207456
+      }
+    ],
+    "the-last-witch": [
+      {
+        "uploadedName": "witch_1.png",
+        "original": "assets/images/archive/the-last-witch/2026-11-07/originals/witch_1.png",
+        "web": "assets/images/web/the-last-witch/2026-11-07/witch-1.webp",
+        "width": 2800,
+        "height": 1377,
+        "bytes": 135018
+      },
+      {
+        "uploadedName": "witch_2.png",
+        "original": "assets/images/archive/the-last-witch/2026-11-07/originals/witch_2.png",
+        "web": "assets/images/web/the-last-witch/2026-11-07/witch-2.webp",
+        "width": 2800,
+        "height": 1377,
+        "bytes": 147232
+      },
+      {
+        "uploadedName": "witch_3.png",
+        "original": "assets/images/archive/the-last-witch/2026-11-07/originals/witch_3.png",
+        "web": "assets/images/web/the-last-witch/2026-11-07/witch-3.webp",
+        "width": 2800,
+        "height": 1377,
+        "bytes": 108584
+      },
+      {
+        "uploadedName": "witch_4.png",
+        "original": "assets/images/archive/the-last-witch/2026-11-07/originals/witch_4.png",
+        "web": "assets/images/web/the-last-witch/2026-11-07/witch-4.webp",
+        "width": 2800,
+        "height": 1548,
+        "bytes": 110500
+      }
+    ]
+  },
+  "retainedMemoryOpeningImage": "assets/images/web/Memory_01.webp",
+  "superseded": {
+    "memory": [
+      "assets/images/web/Memory_02.webp",
+      "assets/images/web/Memory_03.webp",
+      "assets/images/web/Memory_04.webp"
+    ],
+    "the-last-witch": [
+      "assets/images/web/TheLastWitch_01.webp",
+      "assets/images/web/TheLastWitch_02.webp"
+    ]
+  }
+}
